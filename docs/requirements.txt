@@ -1,0 +1,3 @@
+aiida-core>=1.0.1
+-e git+https://github.com/sintef/aiida-logger.git@master#egg=aiida-premod
+pytest
