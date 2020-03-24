@@ -30,7 +30,7 @@ class GCExampleWorkChain(WorkChain):
         spec.input('verbose',
                    valid_type=DataFactory('bool'),
                    required=False,
-                   default=DataFactory('bool')(False),
+                   default=lambda: DataFactory('bool')(False),
                    help="""
                    If True, enable more detailed output during workchain execution.
                    """)
